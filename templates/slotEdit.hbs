@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>SLOT edit </h2>
+    <form action="/slot/edit/{{details._id}}" method="POST">
+        <input type="text" id="centerName" name="centerName" placeholder="center Name" value="{{details.centerName}}"> <br>
+        <textarea rows="13" cols="20" type="text" id="centerAddress" name="centerAddress" placeholder="center address"> {{details.centerAddress}} </textarea> <br> 
+        <input type="number" name="available" id="available" placeholder="slots available" value="{{details.available}}"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

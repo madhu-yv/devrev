@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+
+        <div class="form-box login">
+            <h2>SignUp</h2>
+            <form action="/signup" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" id="name" name="name" placeholder="Create your Username">
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" name="password" placeholder="Password">  
+                </div>
+                {{!-- <div class="remember-forget">
+                    <label>
+                    <input type="checkbox" >
+                    Remember Me
+                    </label>
+                    <a href="#">Forget Password</a>
+                </div> --}}
+                <input type="submit" class="btn">                
+            </form>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+</body>
+</html>
+
+
+
+ {{!-- <h2>SignUp</h2>
+    <form action="/signup" method="post">
+    <input type="text" name="name" placeholder="Create your Username"> 
+    <input type="password" name="password" placeholder="Create Password">
+    <input type="submit">
+    </form> --}}
+
+
+    {{!-- <div class="login-register">
+                    <p>Don't have an Account?
+                    <a href="/signup" class="register-link">Create new Account</a></p>
+                </div> --}}
